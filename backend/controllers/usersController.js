@@ -35,3 +35,10 @@ export async function loginController(req, res) {
         })
     }
 }
+
+export function getMeController(req, res) {
+    return res.status(200).json({
+        success: true,
+        user: req.user
+    })
+}
